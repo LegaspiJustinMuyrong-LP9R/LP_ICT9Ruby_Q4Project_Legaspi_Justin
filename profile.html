@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #007bff;
+        }
+        .profile-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .profile-info p {
+            color: #666;
+            text-align: center;
+        }
+        .profile-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .profile-info ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .profile-info ul li:last-child {
+            margin-right: 0;
+        }
+        .profile-info ul li span {
+            font-weight: bold;
+            color: #333;
+        }
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Profile Information</h1>
+    <div class="profile-info">
+        <img src="profile-pic.jpg" alt="Profile Picture">
+        <h2>Justin jay M. Legaspi</h2>
+        <p>Student</p>
+        <ul>
+            <li><span>Email:</span> legaspi.jm@obmontessori.edu.ph</li>
+            <li><span>Location:</span> Manila, Philippines</li>
+        </ul>
+    </div>
+    <div class="back-button">
+        <a href="main.html" class="btn btn-secondary btn-block">Back to Main Page</a>
+    </div>
+</div>
+
+</body>
+</html>

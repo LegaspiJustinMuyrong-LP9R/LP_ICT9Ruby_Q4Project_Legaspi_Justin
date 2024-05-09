@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin-bottom: 80px; /* Adjust margin to accommodate footer */
+        }
+        .brand-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: #007bff;
+        }
+        .search-form {
+            margin-left: auto;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .h1 {
+            color: #007bff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40; /* Footer background color */
+            color: #ffffff; /* Footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand brand-logo" href="#">
+        <img src="J.png" alt="Logo" style="width: 40px; height: auto;">Online Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="first_quarter.html">First Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="second_quarter.html">Second Quarter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="third_quarter.html">Third Quarter</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+        </ul>
+        <form class="form-inline search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Welcome to the Main Page</h1>
+    <p>This is the main page content.</p>
+    <button class="btn btn-primary" onclick="logout()">Logout</button>
+    <br><br>
+</div>
+<div class="container">
+        <h2>Comments & Suggestions</h2>
+        <form id="commentForm" onsubmit="submitForm(); return false;">
+            <div class="form-group">
+                <label for="comment">Leave your comment or suggestion:</label>
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>About Me</h4>
+                <p>Im a a boy who likes to eat, plav video games, play sports, and sleep.</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Follow Us</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function logout() {
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
